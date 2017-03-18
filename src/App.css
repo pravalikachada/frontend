@@ -16,10 +16,16 @@ font-size: 20px;
 border-radius: 12px;
 
 }*/
+#l{
+  color: black;
+}
 a:link,a::after {
      text-decoration: none ;
   }
-
+.intro-heading{
+  font-style: italic;
+  font-family:cursive;
+}
 
 #mapsurvey{
   float: left;
@@ -40,7 +46,17 @@ button:hover{
   font-size: 2em;
   text-shadow: 0 0 7px white;
 }
+.mapsurvey:link{
+  color: #fed136;
+
+  text-decoration: none;
+}
 .mapsurvey:hover{
+  color: #fed136;
+
+  text-decoration: none;
+}
+.mapsurvey:visited,.mapsurvey:active{
   color: #fed136;
 
   text-decoration: none;
@@ -76,7 +92,10 @@ img{
   height: 100px;
   width: 100px;
 }
-
+#lg{
+  height: 40px;
+  width: 40px;
+}
 
 .navbar-custom .navbar-toggle {
   background-color: #fed136;
@@ -89,4 +108,7 @@ img{
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: #fed136;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgb(128,128,128);
 }

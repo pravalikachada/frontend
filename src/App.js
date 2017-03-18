@@ -49,7 +49,8 @@ class App extends Component {
       <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
       <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
       </button>
-      <a className="mapsurvey page-scroll" id="mapsurvey" href="#">Map Survey Tool</a>
+
+      <a className="mapsurvey page-scroll" id="mapsurvey" href="#"><img id="lg" src="/img/logo.png" alt=""/>&nbsp;Survey Gate</a>
       </div>
 
       <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -67,7 +68,7 @@ class App extends Component {
       <a className="page-scroll"  id="link" href="#contact">Contact</a>
       </li>
       <li>
-      <a className="page-scroll" id="link" onClick = {()=>this.HandleSignin()}>SignUp</a>
+      <a className="page-scroll" id="link"  onClick = {()=>this.HandleSignin()}>SignUp</a>
       </li>
       <li>
       <a className="page-scroll " id="link"  onClick = {()=>this.Handlelogin()}><div id="mn">LOGIN</div></a>
@@ -81,52 +82,13 @@ class App extends Component {
       <section id="content">
       <header>
       <div className="container">
-  <br/>
-
-  <div id="myCarousel" className="carousel slide" data-ride="carousel">
-    <ol className="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4" ></li>
-    </ol>
-    <div className="carousel-inner" role="listbox">
       <div className="item active">
       <div className="intro-text">
-        <div className="intro-heading"> Create Survey !!! Get Answers</div>
-        <a href="#services" className="page-scroll btn btn-xl">More>>></a>
+      <div className="intro-heading"> Create Survey !!! Get Answers</div>
+      <a href="#services" className="page-scroll btn btn-xl">More>>></a>
       </div>
       </div>
-
-
-      <div className="item  intro-text ">
-        <img src="/img/about/1.jpg" alt="Chania" height="40px" width="80px" />
       </div>
-
-      <div className="item intro-text">
-        <img src="/img/about/2.jpg" alt="Chania" height="40px" width="80px" />
-      </div>
-      <div className="item intro-text">
-        <img src="/img/about/3.jpeg" alt="Chania" height="40px" width="80px" />
-      </div>
-      <div className="item intro-text">
-        <img src="/img/about/4.jpg" alt="Chania" height="40px" width="80px" />
-      </div>
-      <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span className="sr-only">Previous</span>
-    </a>
-    <a className="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span className="sr-only">Next</span>
-    </a>
-
-
-    </div>
-    </div>
-
-    </div>
       </header>
       </section>
 
@@ -175,7 +137,7 @@ class App extends Component {
       <div className="container">
       <div className="row">
       <div className="col-lg-12 text-center">
-      <h2 className="section-heading">About</h2>
+      <h2 className="section-heading">About Us</h2>
       </div>
       </div>
       <div className="row">
@@ -249,7 +211,7 @@ class App extends Component {
       <div className="clearfix"></div>
       <div className="col-lg-12 text-center">
       <div id="success"></div>
-      <button type="submit" className="btn btn-xl">Send Message</button>
+      <button type="submit" id="l" className="btn btn-xl">Send Message</button>
       </div>
       </div>
       </form>
@@ -262,7 +224,7 @@ class App extends Component {
       <div className="container">
       <div className="row">
       <div className="col-md-4">
-      <span className="copyright">Copyright &copy; Your Website 2016</span>
+      <span className="copyright">Copyright &copy; Survey Gate 2017</span>
       </div>
       <div className="col-md-4">
       <ul className="list-inline social-buttons">

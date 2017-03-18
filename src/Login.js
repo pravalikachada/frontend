@@ -9,7 +9,7 @@ import App from './App.js';
 import UserLog from './UserLog.js';
 import GoogleMap from './GoogleMap.js';
 
-var SHA256 = require("sha256");
+
 
 
 
@@ -79,8 +79,10 @@ fetch('http://localhost:9000/users/validate/'+username+"?upwd="+password)
 
     .catch(error => console.log(error));
   console.log(document.getElementById("mn").innerHTML);
-    if(document.getElementById("mn").innerHTML=="LOGIN")
+    if(document.getElementById("mn").innerHTML=="LOGIN"){
     document.getElementById("mn").innerHTML="LOGOUT";
+    // document.getElementById("sig").disabled='true';
+  }
     else {
         document.getElementById("mn").innerHTML="LOGIN";
 
